@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-sans;
+    /* Inherit other Tailwind font properties */
+    font-family: Cairo, sans-serif;
+}
