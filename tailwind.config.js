@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
 	content: ["./src/**/*.{html,js}"],
 	theme: {
@@ -14,7 +16,11 @@ module.exports = {
 		fontFamily: {
 			sans: ["Cairo", "sans-serif"],
 		},
-		extend: {},
+		extend: {
+			colors: {
+				...colors,
+			},
+		},
 	},
 	plugins: [],
 };
