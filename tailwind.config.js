@@ -1,16 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
 	content: ["./src/**/*.{html,js}"],
 	theme: {
 		colors: {
 			primary: {
-				700: "#92278F",
-				600: "#B54BB1",
-				500: "#DA6DD4",
-				400: "#FF90F8",
-				300: "#FFB3FF",
+				50: "#fdf5fe",
+				100: "#fbeafd",
+				200: "#f7d4fa",
+				300: "#f2b2f5",
+				400: "#eb84ee",
+				500: "#dc55e0",
+				600: "#c335c4",
+				700: "#a229a0",
+				800: "#92278f",
+				900: "#6d2269",
+				950: "#470b44",
 			},
 		},
 		fontFamily: {
