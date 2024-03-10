@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>الرئيسية | جمعية بلقيس للمرأة والطفل</title>
 
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <link rel="stylesheet" href="../../dist/css/output.css" />
-    <link rel="icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="./src/css/input.css" />
+    <link rel="stylesheet" href="./dist/css/output.css" />
+    <link rel="icon" href="./src/assets/images/logo.png" />
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" />
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <nav class="bg-white border-gray-200">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-5 md:mx-20 p-4">
                 <a href="." class="flex items-center space-x-4 rtl:space-x-reverse">
-                    <img src="./assets/images/logo.png" class="h-16 self-center" alt="شعار جمعية بلقيس" />
+                    <img src="./src/assets/images/logo.png" class="h-16 self-center" alt="شعار جمعية بلقيس" />
                     <span class="self-center text-2xl whitespace-nowrap font-bold hidden lg:block">جمعية بلقيس للمرأة والطفل</span>
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
@@ -53,13 +53,13 @@
         </nav>
     </header>
 
-    <!-- TODO: fix the carousel direction -->
-    <div id="indicators-carousel" class="relative w-10/12 mx-auto" data-carousel="static">
+    <!-- TODO: change the carousel direction -->
+    <section id="indicators-carousel" class="relative w-10/12 mx-auto" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="assets/images/1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+                <img src="./src/assets/images/1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
                 <div class="carousel-caption text-center h-full grid place-items-center relative bg-opacity-50 bg-black">
                     <div class="flex flex-col gap-2 items-center">
                         <h3 class="inline-block translate-x-0 font-bold bg-primary-800 px-2 py-1 rounded-md text-white">
@@ -75,7 +75,7 @@
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="assets/images/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+                <img src="./src/assets/images/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
                 <div class="carousel-caption text-center h-full grid place-items-center relative bg-opacity-50 bg-black">
                     <div class="flex flex-col gap-2 items-center">
                         <h3 class="inline-block translate-x-0 font-bold bg-primary-800 px-2 py-1 rounded-md text-white">
@@ -91,7 +91,7 @@
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="assets/images/3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+                <img src="./src/assets/images/3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
                 <div class="carousel-caption text-center h-full grid place-items-center relative bg-opacity-50 bg-black">
                     <div class="flex flex-col gap-2 items-center">
                         <h3 class="inline-block translate-x-0 font-bold bg-primary-800 px-2 py-1 rounded-md text-white">
@@ -107,7 +107,7 @@
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="assets/images/4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+                <img src="./src/assets/images/4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
                 <div class="carousel-caption text-center h-full grid place-items-center relative bg-opacity-50 bg-black">
                     <div class="flex flex-col gap-2 items-center">
                         <h3 class="inline-block translate-x-0 font-bold bg-primary-800 px-2 py-1 rounded-md text-white">
@@ -146,36 +146,56 @@
                 <span class="sr-only">التالي</span>
             </span>
         </button>
-    </div>
+    </section>
 
     <!-- start about us section -->
-    <div class="p-8">
+    <section class="p-8">
         <div class="container mx-auto">
             <div class="inline-flex items-center justify-center w-full mb-8">
-                <hr class="w-72 md:w-96 h-0.5 my-8 bg-primary-800 border-0">
-                <h2 class="absolute text-2xl font-bold px-6 text-primary-800 -translate-x-1/2 bg-white left-1/2">عن الجمعية</h2>
+                <hr class="w-72 md:w-96 h-0.5 my-8 bg-primary-800 border-0" />
+                <h2 class="absolute text-2xl font-bold px-6 text-primary-800 -translate-x-1/2 bg-white left-1/2">
+                    عن الجمعية
+                </h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:mx-14">
                 <div class="p-8 bg-primary-50 rounded-lg shadow-md">
                     <div class="text-center mb-3">
                         <i class="fa-solid fa-bullseye fa-3x text-primary-800"></i>
                     </div>
-                    <h3 class="text-center mb-4 font-bold text-xl text-primary-800">أهدافنا</h3>
-                    <p class="text-center">تهدف الجمعية إلى خلق فرص عمل مستدامة، رفع مستوى الوعي والتعليم، تحسين الأداء المؤسسي، تشكيل شراكات متعددة، وتقديم خدمات ذات جودة للمجتمع المحلي.</p>
+                    <h3 class="text-center mb-4 font-bold text-xl text-primary-800">
+                        أهدافنا
+                    </h3>
+                    <p class="text-center">
+                        تهدف الجمعية إلى خلق فرص عمل مستدامة، رفع مستوى
+                        الوعي والتعليم، تحسين الأداء المؤسسي، تشكيل شراكات
+                        متعددة، وتقديم خدمات ذات جودة للمجتمع المحلي.
+                    </p>
                 </div>
                 <div class="p-8 bg-primary-50 rounded-lg shadow-md">
                     <div class="text-center mb-3">
                         <i class="fa-regular fa-eye fa-3x text-primary-800"></i>
                     </div>
-                    <h3 class="text-center mb-4 font-bold text-xl text-primary-800">رؤيتنا</h3>
-                    <p class="text-center">أن تكون جمعية بلقيس هي الجمعية الرائدة في مجال تنمية وتدريب وتأهيل المرأة وحماية الطفل وبناء السلام المجتمعي بحلول عام 2025م في مديريــة طور الباحة</p>
+                    <h3 class="text-center mb-4 font-bold text-xl text-primary-800">
+                        رؤيتنا
+                    </h3>
+                    <p class="text-center">
+                        أن تكون جمعية بلقيس هي الجمعية الرائدة في مجال تنمية
+                        وتدريب وتأهيل المرأة وحماية الطفل وبناء السلام
+                        المجتمعي بحلول عام 2025م في مديريــة طور الباحة
+                    </p>
                 </div>
                 <div class="p-8 bg-primary-50 rounded-lg shadow-md">
                     <div class="text-center mb-3">
                         <i class="fa-regular fa-envelope fa-3x text-primary-800"></i>
                     </div>
-                    <h3 class="text-center mb-4 font-bold text-xl text-primary-800">رسالتنا</h3>
-                    <p class="text-center">جمعية بلقيس للمرأة والطفل جمعية نسوية طوعية تنموية، لا تهدف للربح تعمل في مجال التنمية المستدامة للوصول الى أعلى معدلات النماء في مديرية طور الباحة</p>
+                    <h3 class="text-center mb-4 font-bold text-xl text-primary-800">
+                        رسالتنا
+                    </h3>
+                    <p class="text-center">
+                        جمعية بلقيس للمرأة والطفل جمعية نسوية طوعية تنموية،
+                        لا تهدف للربح تعمل في مجال التنمية المستدامة للوصول
+                        الى أعلى معدلات النماء في مديرية طور الباحة
+                    </p>
                 </div>
             </div>
             <div class="text-center mx-auto my-10">
@@ -184,147 +204,55 @@
                 </a>
             </div>
         </div>
-    </div>
-
+    </section>
     <!-- end about us section -->
 
-    <!-- start old projects section -->
-    <div class="bg-gray-sec">
-        <div class="container pt-4">
-            <h1 class="text-center mb-5 fw-bold about-title bg-gray-sec pt-1">
-                مشاريع سابقة
-            </h1>
-            <div class="row">
-                <div class="col-sm-4 mb-4">
-                    <div class="card h-100 pb-3 box-shadow">
-                        <img src="/assets/images/1.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold main-color text-center">
-                                مشروع نزرع ارضا نجني ثمراً
-                            </h5>
-                            <p class="card-text">
-                                قامت الجمعية بإضافة دائرة جديدة في الهيكل
-                                التنظيمي تخص المجال الزراعي حيث ستعمل
-                                الجمعية جاهدة للاهتمام بالمجال الزراعي
-                                والإنتاج الحيواني وكذلك مجل التصنيع الغذائي.
-                            </p>
-                            <div class="text-center">
-                                <a href="#" class="btn-old-proj">المزيد</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="card h-100 pb-3 box-shadow">
-                        <img src="/assets/images/1.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold main-color text-center">
-                                مشروع نزرع ارضا نجني ثمراً
-                            </h5>
-                            <p class="card-text">
-                                قامت الجمعية بإضافة دائرة جديدة في الهيكل
-                                التنظيمي تخص المجال الزراعي حيث ستعمل
-                                الجمعية جاهدة للاهتمام بالمجال الزراعي
-                                والإنتاج الحيواني وكذلك مجل التصنيع الغذائي.
-                            </p>
-                            <div class="text-center">
-                                <a href="#" class="btn-old-proj">المزيد</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="card h-100 pb-3 box-shadow">
-                        <img src="/assets/images/1.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold main-color text-center">
-                                مشروع نزرع ارضا نجني ثمراً
-                            </h5>
-                            <p class="card-text">
-                                قامت الجمعية بإضافة دائرة جديدة في الهيكل
-                                التنظيمي تخص المجال الزراعي حيث ستعمل
-                                الجمعية جاهدة للاهتمام بالمجال الزراعي
-                                والإنتاج الحيواني وكذلك مجل التصنيع الغذائي.
-                            </p>
-                            <div class="text-center">
-                                <a href="#" class="btn-old-proj">المزيد</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="card h-100 pb-3 box-shadow">
-                        <img src="/assets/images/1.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold main-color text-center">
-                                مشروع نزرع ارضا نجني ثمراً
-                            </h5>
-                            <p class="card-text">
-                                قامت الجمعية بإضافة دائرة جديدة في الهيكل
-                                التنظيمي تخص المجال الزراعي حيث ستعمل
-                                الجمعية جاهدة للاهتمام بالمجال الزراعي
-                                والإنتاج الحيواني وكذلك مجل التصنيع الغذائي.
-                            </p>
-                            <div class="text-center">
-                                <a href="#" class="btn-old-proj">المزيد</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="card h-100 pb-3 box-shadow">
-                        <img src="/assets/images/1.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold main-color text-center">
-                                مشروع نزرع ارضا نجني ثمراً
-                            </h5>
-                            <p class="card-text">
-                                قامت الجمعية بإضافة دائرة جديدة في الهيكل
-                                التنظيمي تخص المجال الزراعي حيث ستعمل
-                                الجمعية جاهدة للاهتمام بالمجال الزراعي
-                                والإنتاج الحيواني وكذلك مجل التصنيع الغذائي.
-                            </p>
-                            <div class="text-center">
-                                <a href="#" class="btn-old-proj">المزيد</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="card h-100 pb-3 box-shadow">
-                        <img src="/assets/images/1.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold main-color text-center">
-                                مشروع نزرع ارضا نجني ثمراً
-                            </h5>
-                            <p class="card-text">
-                                قامت الجمعية بإضافة دائرة جديدة في الهيكل
-                                التنظيمي تخص المجال الزراعي حيث ستعمل
-                                الجمعية جاهدة للاهتمام بالمجال الزراعي
-                                والإنتاج الحيواني وكذلك مجل التصنيع الغذائي.
-                            </p>
-                            <div class="text-center">
-                                <a href="#" class="btn-old-proj">المزيد</a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- start projects section -->
+    <section class="bg-white antialiased">
+        <div class="max-w-screen-xl px-4 mx-auto">
+            <div class="max-w-2xl mx-auto text-center">
+                <div class="inline-flex items-center justify-center w-full mb-8">
+                    <hr class="w-72 md:w-96 h-0.5 my-8 bg-primary-800 border-0" />
+                    <h2 class="absolute text-2xl font-bold px-6 text-primary-800 text-nowrap -translate-x-1/2 bg-white left-1/2">
+                        المشاريع السابقة
+                    </h2>
                 </div>
             </div>
-            <div class="text-center mt-3 p-5">
-                <a href="#">
-                    <button type="button" class="more-btn text-center">
-                        المزيد من المشاريع السابقة
-                    </button>
-                </a>
+
+            <div class="grid grid-cols-1 text-center gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                <div>
+                    <img src="./src/assets/images/1.jpg" class="w-full h-auto rounded-t-lg" alt="..." />
+                    <div class="rounded-b-lg space-y-4 bg-primary-50 p-5">
+                        <span class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                            عدن
+                        </span>
+                        <h3 class="text-2xl font-bold leading-tight text-gray-900">
+                            مشروع نزرع أرضاً نجني ثمراً
+                        </h3>
+                        <p class="font-normal text-gray-500">
+                            قامت الجمعية بإضافة دائرة جديدة في الهيكل
+                            التنظيمي تخص المجال الزراعي حيث ستعمل الجمعية
+                            جاهدة للاهتمام بالمجال الزراعي والإنتاج الحيواني
+                            وكذلك مجل التصنيع الغذائي.
+                        </p>
+                        <a href="#" title="" class="duration-150 transition-all text-white bg-primary-600 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center :bg-primary-700 :ring-primary-800" role="button">
+                            المزيد
+                            <!-- <i class="fw-regular fw-arrow-top"></i> -->
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- End old projects section -->
+        <div class="text-center mx-auto my-10">
+            <a href="./src/pages/#" class="text-primary-800 hover:underline">المزيد من المشاريع السابقة</a>
+        </div>
+    </section>
+    <!-- end projects section -->
 
     <!-- Start news section -->
-    <div class="container layout-padding">
+    <!-- <div class="container layout-padding">
         <h1 class="text-center mb-5 fw-bold about-title">الاخبــــار</h1>
-    </div>
+    </div> -->
     <!-- End news section -->
 
     <footer class="main-bg-color text-white mt-5 p-5">
