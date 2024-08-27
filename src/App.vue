@@ -1,3 +1,3 @@
 <template>
-  <div class="bg-red-500">أهلاً</div>
+  <div class="h-screen grid place-items-center">أهلاً</div>
 </template>
