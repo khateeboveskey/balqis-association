@@ -1,3 +1,11 @@
+<script setup>
+import PageHeader from './components/PageHeader.vue';
+import { RouterView } from 'vue-router';
+</script>
+
 <template>
-  <div class="h-screen grid place-items-center">أهلاً</div>
+  <div>
+    <PageHeader />
+    <router-view />
+  </div>
 </template>
