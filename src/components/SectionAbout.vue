@@ -1,6 +1,5 @@
 <script setup>
 import SectionHeading from './SectionHeading.vue';
-import SectionMoreLink from './SectionMoreLink.vue';
 
 const aboutCards = [
   {
@@ -40,6 +39,5 @@ const aboutCards = [
         <p class="text-center">{{ card.description }}</p>
       </div>
     </div>
-    <SectionMoreLink href="./src/pages/about.html">المزيد عن الجمعية</SectionMoreLink>
   </section>
 </template>

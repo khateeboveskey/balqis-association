@@ -1,18 +1,20 @@
 {
-  "relatedLinks": [
-    {
-      "url": "https://www.mosal-ye.net/",
-      "text": "وزارة الشؤون الاجتماعية"
-    },
-    {
-      "url": "https://www.intersos.org/en/what-we-do/yemen/",
-      "text": "منظمة انترسوس"
-    },
-    {
-      "url": "https://www.undp.org/yemen",
-      "text": "منظمة UNDP"
-    }
-  ],
+  "footerLinks": {
+    "روابط ذات صلة": [
+      {
+        "url": "https://www.mosal-ye.net/",
+        "text": "وزارة الشؤون الاجتماعية"
+      },
+      {
+        "url": "https://www.intersos.org/en/what-we-do/yemen/",
+        "text": "منظمة انترسوس"
+      },
+      {
+        "url": "https://www.undp.org/yemen",
+        "text": "منظمة UNDP"
+      }
+    ]
+  },
   "socialMedia": [
     {
       "url": "https://www.facebook.com/assbilqis2005",
