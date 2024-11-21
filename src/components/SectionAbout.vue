@@ -25,23 +25,21 @@ const aboutCards = [
 </script>
 
 <template>
-  <section class="p-8">
-    <div class="container mx-auto">
-      <SectionHeading>عن الجمعية</SectionHeading>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:mx-14">
-        <div
-          v-for="card in aboutCards"
-          :key="card.title"
-          class="p-8 bg-primary-50 rounded-lg shadow-md"
-        >
-          <div class="text-center mb-3">
-            <i :class="[card.icon, 'fa-3x', 'text-primary-800']"></i>
-          </div>
-          <h3 class="text-center mb-4 font-bold text-xl text-primary-800">{{ card.title }}</h3>
-          <p class="text-center">{{ card.description }}</p>
+  <section class="max-w-screen-xl px-4 mx-auto my-8">
+    <SectionHeading>عن الجمعية</SectionHeading>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+      <div
+        v-for="card in aboutCards"
+        :key="card.title"
+        class="p-8 bg-primary-50 rounded-lg shadow-md"
+      >
+        <div class="text-center mb-3">
+          <i :class="[card.icon, 'fa-3x', 'text-primary-800']"></i>
         </div>
+        <h3 class="text-center mb-4 font-bold text-xl text-primary-800">{{ card.title }}</h3>
+        <p class="text-center">{{ card.description }}</p>
       </div>
-      <SectionMoreLink href="./src/pages/about.html">المزيد عن الجمعية</SectionMoreLink>
     </div>
+    <SectionMoreLink href="./src/pages/about.html">المزيد عن الجمعية</SectionMoreLink>
   </section>
 </template>
