@@ -4,9 +4,9 @@ import routes from '@/router/routes';
 </script>
 
 <template>
-  <header>
+  <header class="w-10/12 mx-auto">
     <nav class="bg-white border-gray-200">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-5 md:mx-20 p-4">
+      <div class="flex flex-wrap items-center justify-between py-4">
         <router-link to="/" class="flex items-center space-x-4 rtl:space-x-reverse">
           <img src="/imgs/logo.png" class="h-16 self-center" alt="شعار جمعية بلقيس" />
           <span class="self-center text-2xl whitespace-nowrap font-bold hidden lg:block"

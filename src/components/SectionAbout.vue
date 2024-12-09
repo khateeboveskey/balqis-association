@@ -24,13 +24,13 @@ const aboutCards = [
 </script>
 
 <template>
-  <section class="max-w-screen-xl px-4 mx-auto my-8">
+  <section class="w-10/12 mx-auto">
     <SectionHeading>عن الجمعية</SectionHeading>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
       <div
         v-for="card in aboutCards"
         :key="card.title"
-        class="p-8 bg-primary-50 rounded-lg shadow-md"
+        class="p-8 bg-primary-50 rounded-lg border border-primary-300"
       >
         <div class="text-center mb-3">
           <i :class="[card.icon, 'fa-3x', 'text-primary-800']"></i>
