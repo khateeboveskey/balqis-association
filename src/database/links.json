@@ -18,7 +18,8 @@
   "socialMedia": [
     {
       "url": "https://www.facebook.com/assbilqis2005",
-      "icon": "fa-brands fa-facebook"
+      "icon": "fa-brands fa-facebook",
+      "ariaLabel": "تابع صفحتنا على الفيسبوك"
     }
   ]
 }

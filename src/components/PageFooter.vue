@@ -35,6 +35,7 @@
             :key="social.url"
             target="_blank"
             :href="social.url"
+            :aria-label="social.ariaLabel"
             class="text-gray-500 hover:text-gray-900"
           >
             <i :class="social.icon" class="w-5 h-5"></i>
