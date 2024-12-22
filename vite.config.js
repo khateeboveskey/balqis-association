@@ -10,13 +10,19 @@ export default defineConfig({
     vue(),
     ViteImageOptimizer({
       png: {
-        quality: 30
+        quality: 30,
+        strip: true
       },
       jpeg: {
-        quality: 30
+        quality: 30,
+        mozjpeg: true
       },
       jpg: {
-        quality: 30
+        quality: 30,
+        mozjpeg: true
+      },
+      webp: {
+        lossless: true
       }
     })
   ],
