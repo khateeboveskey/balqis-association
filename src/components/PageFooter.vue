@@ -4,7 +4,12 @@
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <RouterLink to="/" class="flex items-center space-x-4 rtl:space-x-reverse -translate-y-5">
-            <img src="/imgs/logo.png" class="h-16 self-center" alt="شعار جمعية بلقيس" />
+            <img
+              loading="lazy"
+              src="/imgs/logo.png"
+              class="h-16 self-center"
+              alt="شعار جمعية بلقيس"
+            />
             <span class="self-center text-2xl font-bold">جمعية بلقيس للمرأة والطفل</span>
           </RouterLink>
         </div>
