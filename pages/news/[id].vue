@@ -4,6 +4,13 @@ const { data: post } = await useAsyncData(route.path, () => {
   return queryCollection('content').path(route.path).first()
 });
 
+const { data: otherNews } = await useAsyncData('news', () => {
+  return queryCollection('content')
+    .where('path', '<>', route.path)
+    .limit(3)
+    .all()
+});
+
 useSeoMeta({
   title: post.value?.title,
   description: post.value?.description,
@@ -18,7 +25,18 @@ useSeoMeta({
     <NuxtImg class="rounded-lg mb-6 sm:mb-10 w-full h-auto object-cover" placeholder format="webp" quality="80" loading="lazy" sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 768px" :alt="post?.title" :src="post?.image" />
     <ContentRenderer class="text-base sm:text-lg prose w-full" v-if="post" :value="post" />
     <div v-else class="text-red-600 text-center py-4 sm:py-8">عذراً، حصل خطأ</div>
+
+    <!-- Other News Section -->
   </article>
+  <section v-if="otherNews.length > 0" class="w-10/12 mx-auto">
+    <SectionHeading>المزيد من الأخبار</SectionHeading>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+      <PostCard v-for="(news, index) in otherNews" :post="news" :key="index" />
+    </div>
+    <div class="text-center">
+      <NuxtLink class="underline text-primary-600 hover:opacity-80" to="/news">المزيد من الأخبار</NuxtLink>
+    </div>
+  </section>
 </template>
 
 <style>

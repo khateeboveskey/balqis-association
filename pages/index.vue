@@ -1,6 +1,6 @@
 <template>
   <CarouselComp />
   <SectionAbout />
-  <SectionProjects />
+  <!-- <SectionProjects /> -->
   <SectionNews />
 </template>
