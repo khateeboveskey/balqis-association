@@ -15,7 +15,7 @@
             </h2>
             <ul class="text-neutral-400">
               <li v-for="link in footerList" :key="link.url" class="mb-4">
-                <a target="_blank" :href="link.url" class="hover:underline hover:text-primary-800">{{ link.text }}</a>
+                <a target="_blank" :href="link.url" class="hover:underline hover:text-primary-500">{{ link.text }}</a>
               </li>
             </ul>
           </div>
