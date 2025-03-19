@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div v-for="article in articles" :key="article.id">
-    <NuxtImg quality="50" format="webp" loading="lazy" :src="article.image" class="w-full h-auto rounded-t-lg" :alt="article.title" />
+    <NuxtImg placeholder quality="50" format="webp" loading="lazy" :src="article.image" class="w-full h-auto rounded-t-lg" :alt="article.title" />
     <div class="rounded-b-lg space-y-4 bg-primary-50 p-5 border border-primary-300">
       <span class="bg-primary-100 text-primary-800 border border-primary-500 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded">
         {{ article.tag }}

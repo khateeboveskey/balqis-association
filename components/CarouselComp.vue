@@ -3,7 +3,7 @@
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
       <div v-for="(slide, index) in slides" :key="index" class="hidden duration-700 ease-in-out" data-carousel-item>
-        <NuxtImg quality="50" format="webp" loading="lazy" :src="slide.imageUrl" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" :alt="slide.heading" />
+        <NuxtImg quality="50" format="webp" :src="slide.imageUrl" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" :alt="slide.heading" />
         <div class="carousel-caption text-center h-full grid place-items-center relative bg-black/75">
           <div class="flex flex-col gap-2 items-center">
             <h3 class="inline-block translate-x-0 font-bold bg-primary-800 px-2 py-1 rounded-md text-white">

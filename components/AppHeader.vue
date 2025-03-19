@@ -12,7 +12,7 @@ const routes = [
     <nav class="bg-white border-gray-200">
       <div class="flex flex-wrap items-center justify-between py-4">
         <NuxtLink to="/" class="flex items-center space-x-4 rtl:space-x-reverse">
-          <img fetchpriority="high" src="/logo.png" class="h-16 self-center" alt="شعار جمعية بلقيس" />
+          <NuxtImg quality="50" format="webp" fetchpriority="high" src="/logo.png" class="h-16 self-center" alt="شعار جمعية بلقيس" />
           <span class="self-center text-2xl whitespace-nowrap font-bold hidden lg:block">جمعية بلقيس للمرأة والطفل</span>
         </NuxtLink>
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
