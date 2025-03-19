@@ -1,7 +1,4 @@
 <script setup>
-import ArticleCard from './ArticleCard.vue';
-import SectionHeading from './SectionHeading.vue';
-
 import { news } from '@/database/news.json';
 </script>
 

@@ -1,6 +1,4 @@
 <script setup>
-import SectionHeading from './SectionHeading.vue';
-import ArticleCard from './ArticleCard.vue';
 import { projects } from '@/database/projects.json';
 </script>
 

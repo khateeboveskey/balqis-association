@@ -1,5 +1,4 @@
 <script setup>
-import SectionHeading from './SectionHeading.vue';
 import { cards } from '@/database/cards.json';
 </script>
 
